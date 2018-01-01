@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ragesoss/WikipediaTwitterbot
-  revision: 18e7fe39c143ceb12d1a8cf753893720787fa59d
+  revision: 6f2fb3fc410d02e880fd03405b8d1ec99e5bb18f
   branch: master
   specs:
     wikipedia_twitterbot (0.1.0)
@@ -8,6 +8,7 @@ GIT
       activerecord-import
       logger
       mediawiki_api
+      pandoc-ruby
       sqlite3
       twitter
 
@@ -63,6 +64,7 @@ GEM
     minitest (5.10.3)
     multipart-post (2.0.0)
     naught (1.1.0)
+    pandoc-ruby (2.0.2)
     public_suffix (3.0.1)
     simple_oauth (0.3.1)
     sqlite3 (1.3.13)
