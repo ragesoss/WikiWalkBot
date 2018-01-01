@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ragesoss/WikipediaTwitterbot
-  revision: 6f2fb3fc410d02e880fd03405b8d1ec99e5bb18f
+  revision: 4e48c0322ab44d82ac89cc3f8fa3d9c339690097
   branch: master
   specs:
     wikipedia_twitterbot (0.1.0)
