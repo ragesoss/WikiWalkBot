@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/ragesoss/WikipediaTwitterbot
-  revision: 4e48c0322ab44d82ac89cc3f8fa3d9c339690097
+  revision: 9a764554cd0f2ad891aa057b638e21b4e3830d01
   branch: master
   specs:
-    wikipedia_twitterbot (0.1.0)
+    wikipedia_twitterbot (0.2.0)
       activerecord
       activerecord-import
       logger
@@ -61,7 +61,7 @@ GEM
       faraday_middleware (~> 0.10, >= 0.10.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
-    minitest (5.10.3)
+    minitest (5.11.1)
     multipart-post (2.0.0)
     naught (1.1.0)
     pandoc-ruby (2.0.2)
