@@ -8,6 +8,7 @@ class WikiWalkBot
   end
 
   def start_walking
+    Article.import_at_random min_views: 1000
     article = Article.all.sample
     tweet_and_step(article, nil, 0)
   end
