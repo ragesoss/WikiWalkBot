@@ -11,6 +11,7 @@ class WikiWalkBot
     Article.import_at_random min_views: 1000
     article = Article.all.sample
     tweet = Tweet.new(first_tweet article).result
+    sleep 5
     tweet_and_step(article, tweet.id, 0)
   end
 
@@ -21,7 +22,7 @@ class WikiWalkBot
   def tweet_and_step(article, reply_to_id, depth)
     return if depth > 30
     article.wikilinks.shuffle.each do |link|
-      sentence = article.sentence_with(link).gsub(/^\[/, '')
+      sentence = article.sentence_with(link)&.gsub(/^\[/, '')
       next unless sentence.present?
       next if sentence.length > 280
       next if sentence.length < 40
