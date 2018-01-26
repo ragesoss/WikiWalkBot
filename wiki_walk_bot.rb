@@ -35,7 +35,7 @@ class WikiWalkBot
       }
       tweet = article.tweet(sentence, opts) unless @dry_run
       next_article = FindArticles.by_title link
-      sleep 5
+      sleep 15
       return tweet_and_step(next_article, tweet.id, depth + 1)
     rescue StandardError => e
       pp e
